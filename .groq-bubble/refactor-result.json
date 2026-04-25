@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-04-25T19:16:36.718Z",
+  "sourceRepo": "octocat/Hello-World",
+  "targetRepo": "mojobadshah/Hello-World",
+  "baseBranch": "master",
+  "branch": "groq-poly-refactor-hello-world-2026-04-25t19-16-36-234z",
+  "summary": "Polyrepo refactor: docs, demo, workflow, and minimal frontend staging changes",
+  "risk": "low",
+  "prompt": "Plan a safe polyrepo refactor. Prefer docs, demo, workflow, or minimal frontend staging changes. Always add a minimal frontend staging demo. Do not put secrets in files. Keep changes reviewable and reversible.",
+  "changes": [
+    {
+      "path": "docs/README.md",
+      "action": "update",
+      "reason": "reflect new file structure"
+    },
+    {
+      "path": "docs/demo/index.html",
+      "action": "create",
+      "reason": "simple demo"
+    },
+    {
+      "path": "docs/demo/style.css",
+      "action": "create",
+      "reason": "simple styles"
+    },
+    {
+      "path": "actions/workflows/main.yml",
+      "action": "update",
+      "reason": "handle new file structure"
+    },
+    {
+      "path": "docs/demo/index.js",
+      "action": "create",
+      "reason": "simple frontend demo"
+    }
+  ]
+}

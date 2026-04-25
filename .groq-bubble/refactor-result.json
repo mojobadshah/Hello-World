@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-04-25T19:41:40.891Z",
+  "sourceRepo": "octocat/Hello-World",
+  "targetRepo": "mojobadshah/Hello-World",
+  "baseBranch": "master",
+  "branch": "groq-poly-refactor-hello-world-2026-04-25t19-41-40-449z",
+  "summary": "Fallback plan because Groq did not return valid JSON.",
+  "risk": "medium",
+  "prompt": "Plan a safe polyrepo refactor. Prefer docs, demo, workflow, or minimal frontend staging changes. Always add a minimal frontend staging demo. Do not put secrets in files. Keep changes reviewable and reversible.",
+  "safeApplyMode": true,
+  "safeAiChangeRoot": "groq-bubble-safe-changes",
+  "changes": [],
+  "blockedChanges": []
+}

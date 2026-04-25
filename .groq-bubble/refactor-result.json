@@ -1,0 +1,47 @@
+{
+  "generatedAt": "2026-04-25T19:30:27.601Z",
+  "sourceRepo": "octocat/Hello-World",
+  "targetRepo": "mojobadshah/Hello-World",
+  "baseBranch": "master",
+  "branch": "groq-poly-refactor-hello-world-2026-04-25t19-30-27-245z",
+  "summary": "Polyrepo refactor plan for octocat/Hello-World",
+  "risk": "low",
+  "prompt": "Plan a safe polyrepo refactor. Prefer docs, demo, workflow, or minimal frontend staging changes. Always add a minimal frontend staging demo. Do not put secrets in files. Keep changes reviewable and reversible.",
+  "changes": [
+    {
+      "path": "README.md",
+      "action": "update",
+      "reason": "Link to new demo app"
+    },
+    {
+      "path": "frontend/staging",
+      "action": "create",
+      "reason": "Frontend demo app"
+    },
+    {
+      "path": ".gitignore",
+      "action": "update",
+      "reason": "Exclude sensitive files"
+    },
+    {
+      "path": "octocat/Hello-World/demo",
+      "action": "create",
+      "reason": "Frontend demo folder"
+    },
+    {
+      "path": "octocat/Hello-World/demo/index.js",
+      "action": "copy",
+      "reason": "Copy static JS file"
+    },
+    {
+      "path": "octocat/Hello-World/demo/index.html",
+      "action": "copy",
+      "reason": "Copy static HTML file"
+    },
+    {
+      "path": "octocat/Hello-World/index.html",
+      "action": "update",
+      "reason": "Link to staging demo"
+    }
+  ]
+}

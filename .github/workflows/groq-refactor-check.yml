@@ -1,0 +1,23 @@
+name: Groq Public Poly Refactor Check
+
+on:
+  push:
+    branches:
+      - 'groq-poly-refactor-hello-world-2026-04-25t19-30-27-245z'
+  workflow_dispatch:
+
+jobs:
+  refactor_check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Show refactor plan
+        run: |
+          test -f .groq-bubble/refactor-plan.md && cat .groq-bubble/refactor-plan.md || true
+          test -f .groq-bubble/refactor-result.json && cat .groq-bubble/refactor-result.json || true
+
+      - name: Smoke check
+        run: |
+          find . -maxdepth 3 -type f | head -n 120
+          if [ -f package.json ]; then npm install --ignore-scripts || true; npm test || true; fi

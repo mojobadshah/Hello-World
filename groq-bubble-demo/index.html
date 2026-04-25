@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Auto-Fork Refactor Demo</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:linear-gradient(135deg,#050509,#111827);color:#fff;font-family:system-ui;display:grid;place-items:center;padding:24px}
+main{width:min(900px,100%);border:1px solid rgba(255,255,255,.16);border-radius:28px;background:rgba(255,255,255,.06);padding:24px;box-shadow:0 24px 70px rgba(0,0,0,.5)}
+.pill{display:inline-block;background:#23ffe5;color:#001b18;border-radius:999px;padding:7px 12px;font-weight:900}
+h1{font-size:clamp(34px,8vw,72px);line-height:.95;margin:18px 0}
+pre{white-space:pre-wrap;background:#020617;border:1px solid rgba(255,255,255,.15);border-radius:18px;padding:16px;color:#d1fae5}
+button,input{font:inherit;border-radius:14px;border:0;padding:12px;margin-top:10px}
+button{background:#23ffe5;color:#001b18;font-weight:900;cursor:pointer}
+input{background:#020617;color:#fff;border:1px solid rgba(255,255,255,.15)}
+</style>
+</head>
+<body>
+<main>
+<span class="pill">AUTO-FORK STAGING DEMO</span>
+<h1>Refactor Branch Preview</h1>
+<p>Repository: mojobadshah/Hello-World</p>
+<p>Branch: groq-poly-refactor-hello-world-2026-04-25t19-41-40-449z</p>
+<input id="x" value="demo input" />
+<button onclick="document.getElementById('out').textContent='Demo ran at '+new Date().toLocaleString()+'\nInput: '+document.getElementById('x').value">Run Demo</button>
+<pre id="out">Fallback plan because Groq did not return valid JSON.</pre>
+</main>
+</body>
+</html>

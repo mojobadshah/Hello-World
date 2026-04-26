@@ -1,0 +1,12 @@
+{
+  "generatedAt": "2026-04-26T02:45:24.202Z",
+  "model": "llama-3.1-8b-instant",
+  "source": "octocat/Hello-World",
+  "target": "mojobadshah/Hello-World",
+  "baseBranch": "master",
+  "branch": "groq-poly-refactor-hello-world-2026-04-26t02-45-23-652z",
+  "safeApplyMode": true,
+  "summary": "Octocat/Hello-World polyrepo refactor plan",
+  "risk": "low",
+  "note": "Generated changes are stored in groq-bubble-safe-changes/* for safe review. Original source paths are not overwritten."
+}

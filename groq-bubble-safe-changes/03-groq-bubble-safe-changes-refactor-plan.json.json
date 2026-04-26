@@ -1,0 +1,9 @@
+/*
+Model: llama-3.1-8b-instant
+Original desired path: groq-bubble-safe-changes/refactor-plan.json
+Action: create
+Reason: Safed generated refactor plan
+Safe apply mode: proposed content only; not written to original path.
+*/
+
+{"summary": "Octocat/Hello-World polyrepo refactor plan", "risk": "low", "planMarkdown": "...", "changes": [...]}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover" />
+<title>Groq Bubble Demo</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:#030712;color:#f8fafc;font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+body{display:grid;place-items:center;padding:22px;background:radial-gradient(circle at 20% 0%,rgba(45,255,235,.28),transparent 30%),radial-gradient(circle at 90% 20%,rgba(255,0,136,.22),transparent 28%),#030712}
+main{width:min(980px,100%);border:1px solid rgba(255,255,255,.15);border-radius:28px;padding:24px;background:rgba(15,23,42,.78);box-shadow:0 24px 90px rgba(0,0,0,.6)}
+.pill{display:inline-block;border:1px solid rgba(45,255,235,.6);color:#2dffeb;border-radius:999px;padding:8px 12px;font-weight:950;font-size:12px;letter-spacing:.08em}
+h1{font-size:clamp(34px,8vw,76px);line-height:.94;margin:18px 0 12px;letter-spacing:-.06em}
+p{color:#cbd5e1;line-height:1.55}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
+.card{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);border-radius:18px;padding:14px}
+.k{font-size:11px;color:#94a3b8;text-transform:uppercase;font-weight:900}
+.v{margin-top:8px;word-break:break-word}
+.row{display:grid;grid-template-columns:1fr auto;gap:10px}
+input,button{font:inherit;border-radius:14px;border:1px solid rgba(255,255,255,.15);padding:13px;background:#020617;color:#fff}
+button{border:0;background:linear-gradient(180deg,#2dffeb,#17b7a9);color:#001311;font-weight:950;cursor:pointer}
+pre{white-space:pre-wrap;word-break:break-word;background:#020617;border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:16px;color:#b6ffe7;min-height:100px}
+@media(max-width:720px){.grid,.row{grid-template-columns:1fr}main{padding:18px}}
+</style>
+</head>
+<body>
+<main>
+<span class="pill">MINIMAL FRONTEND STAGING DEMO</span>
+<h1>GitHub Refactor Runner</h1>
+<p>This demo is committed on every safe apply branch so the repo always contains a browser-runnable staging surface.</p>
+<div class="grid">
+  <div class="card"><div class="k">Repo</div><div class="v">mojobadshah/Hello-World</div></div>
+  <div class="card"><div class="k">Branch</div><div class="v">groq-poly-refactor-hello-world-2026-04-26t02-45-23-652z</div></div>
+  <div class="card"><div class="k">Model</div><div class="v">llama-3.1-8b-instant</div></div>
+</div>
+<div class="row">
+  <input id="demoInput" value="Run staged preview" />
+  <button id="runBtn">Run Demo</button>
+</div>
+<pre id="out">Octocat/Hello-World polyrepo refactor plan</pre>
+</main>
+<script>
+const REPO = "mojobadshah/Hello-World";
+const BRANCH = "groq-poly-refactor-hello-world-2026-04-26t02-45-23-652z";
+const MODEL = "llama-3.1-8b-instant";
+document.getElementById("runBtn").onclick = function(){
+  document.getElementById("out").textContent =
+    "Demo active at " + new Date().toLocaleString() +
+    "\nInput: " + document.getElementById("demoInput").value +
+    "\nRepo: " + REPO +
+    "\nBranch: " + BRANCH +
+    "\nModel: " + MODEL;
+};
+</script>
+</body>
+</html>

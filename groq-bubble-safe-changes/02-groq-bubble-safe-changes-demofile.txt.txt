@@ -1,0 +1,9 @@
+/*
+Model: llama-3.1-8b-instant
+Original desired path: groq-bubble-safe-changes/demofile.txt
+Action: create
+Reason: Minimal frontend demo file
+Safe apply mode: proposed content only; not written to original path.
+*/
+
+Hello World!

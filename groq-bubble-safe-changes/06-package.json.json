@@ -1,0 +1,9 @@
+/*
+Model: llama-3.1-8b-instant
+Original desired path: package.json
+Action: update
+Reason: Update package dependencies
+Safe apply mode: proposed content only; not written to original path.
+*/
+
+{"name": "hello-world", "version": "1.0.0", "private": true, "dependencies": {...}}

@@ -1,0 +1,11 @@
+/*
+Model: llama-3.1-8b-instant
+Original desired path: .gitignore
+Action: update
+Reason: Update .gitignore to include generated files
+Safe apply mode: proposed content only; not written to original path.
+*/
+
+node_modules/
+groq-bubble-safe-changes/
+package-lock.json
